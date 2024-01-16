@@ -88,11 +88,11 @@ export function WelcomeSection() {
 							}}
 						>
 							<button type="button" className="text-white bg-[#50dfa8] font-semibold rounded-full text-lg max-md:text-sm px-5 py-2.5 text-center mr-4 ">Get my CV</button>
-							<FaGithub className="mr-2" size={35}/>
-							<FaLinkedin className="ml-2"size={35}/>
+							<FaGithub className="mr-2" size={32}/>
+							<FaLinkedin className="ml-2"size={32}/>
 						</div>
 					</div>
-					<Image className='w-auto xl:h-4/5 xl:absolute bottom-0 right-20 max-md:order-first' src='/images/photo1-removebg.png' height={200} width={300} alt='cart Image' />
+					<Image className='w-auto xl:h-4/5 xl:absolute bottom-0 right-20 max-md:order-first' src='/images/photo.png' height={200} width={300} alt='cart Image' />
 				</div>
 			</section>
 		</LazyMotion>
