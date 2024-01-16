@@ -1,8 +1,9 @@
+"use client";
 import { useRef } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { TECHNOLOGIES } from "./technology";
 
-export function TechnologiesSection() {
+const TechnologiesSection = () => {
     const textRef = useRef(null);
     const stackRef = useRef(null);
     const isTextInView = useInView(textRef, { once: true });
@@ -77,3 +78,4 @@ export function TechnologiesSection() {
         </div>
     );
 }
+export default TechnologiesSection

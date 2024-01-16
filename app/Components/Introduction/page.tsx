@@ -7,30 +7,29 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-export function WelcomeSection() {
+const WelcomeSection = () => {
 	const ref = useRef(null);
 	const introRef = useRef(null);
 	const isInView = useInView(ref, { once: true });
-
+  
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"FrontEnd Developer",
-		"convert design into modern UI",
-		"build interactive UI using React",
-		"develop websites using Next.js"
+	  "FrontEnd Developer",
+	  "convert design into modern UI",
+	  "build interactive UI using React",
+	  "develop websites using Next.js"
 	]);
-
-
+  
 	useEffect(() => {
-		let interval = setInterval(() => {
-			setCount(count + 1);
-
-			if (count === 3) {
-				setCount(0);
-			}
-		}, 2000);
-
-		return () => clearInterval(interval);
+	  let interval = setInterval(() => {
+		setCount(count + 1);
+  
+		if (count === 3) {
+		  setCount(0);
+		}
+	  }, 2000);
+  
+	  return () => clearInterval(interval);
 	}, [count]);
 
 	return (
@@ -98,4 +97,4 @@ export function WelcomeSection() {
 		</LazyMotion>
 	);
 }
-
+export default WelcomeSection

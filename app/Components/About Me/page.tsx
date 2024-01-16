@@ -94,10 +94,10 @@ const AboutSection = () => {
                 active={tab === "skills"}
               >
                 {" "}
-                <div className={`${tab === "skills" ? 'border-[#3182ce] border-2 rounded-lg p-1' : ' '}`}>
+                <span className={`${tab === "skills" ? 'border-[#3182ce] border-2 rounded-lg p-1' : ' '}`}>
 
                   Skills
-                </div>
+                </span>
                 {" "}
               </TabButton>
               <TabButton
@@ -105,10 +105,10 @@ const AboutSection = () => {
                 active={tab === "education"}
               >
                 {" "}
-                <div className={`${tab === "education" ? 'border-[#3182ce] border-2 rounded-lg p-1' : ' '}`}>
+                <span className={`${tab === "education" ? 'border-[#3182ce] border-2 rounded-lg p-1' : ' '}`}>
 
                   Education
-                </div>
+                </span>
                 {" "}
               </TabButton>
               <TabButton
@@ -116,10 +116,10 @@ const AboutSection = () => {
                 active={tab === "certifications"}
               >
                 {" "}
-                <div className={`${tab === "certifications" ? 'border-[#3182ce] border-2 rounded-lg p-1' : ' '}`}>
+                <span className={`${tab === "certifications" ? 'border-[#3182ce] border-2 rounded-lg p-1' : ' '}`}>
 
                   Certifications
-                </div>
+                </span>
                 {" "}
               </TabButton>
             </div>

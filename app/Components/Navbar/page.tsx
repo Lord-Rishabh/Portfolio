@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { useState } from 'react';
 import { FaBars } from "react-icons/fa6";
