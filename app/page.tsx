@@ -9,10 +9,12 @@ export default function Page() {
     return (
         <div className="bg-[#232332] font-sans ">
             <Navbar />
-            <div className="container-md p-9 bg-[#232332] h-[91.5vh] max-md:overflow-y-auto overflow-hidden">
+            <div className="container-md p-9 bg-[#232332]  max-md:overflow-y-auto overflow-hidden pb-13">
                 <WelcomeSection />
             </div>
-            <AboutMe />
+            <div className="pt-12">
+                <AboutMe />
+            </div>
             <ProjectsSection />
             <div className="overflow-hidden p-5">
                 <TechnologiesSection />

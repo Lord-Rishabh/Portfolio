@@ -10,33 +10,33 @@ const ProjectsSection = () => {
 
   const [projectsData, setProjectsData] = useState([
     {
-      id: 1,
-      title: "React Portfolio Website",
-      description: "Project 1 description",
-      image: "/images/dev.avif",
+      id: 2,
+      title: "NewsByRishabh",
+      description: "Crafted a dynamic and interactive news experience using React, HTML, CSS, and JavaScript. Real-time news data integration and categorization features ensure a seamless user journey.",
+      image: "/images/newsByRishabh.png",
       tag: ["All", "Web"],
       gitUrl: "/",
       previewUrl: "/",
     },
     {
-      id: 2,
-      title: "Potography Portfolio Website",
-      description: "Project 2 description",
-      image: "/images/dev.avif",
+      id: 1,
+      title: "Portfolio Website",
+      description: "Portfolio crafted with Next.js, Tailwind, HTML, and TypeScript or a seamless and responsive user experience, combining performance, responsiveness, and sleek design.",
+      image: "/images/portfolio.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
-      previewUrl: "/",
+      gitUrl: "https://github.com/Lord-Rishabh/Portfolio",
+      previewUrl: "https://portfolio-4lnp.vercel.app/",
     },
     {
       id: 3,
-      title: "E-commerce Application",
-      description: "Project 3 description",
-      image: "/images/dev.avif",
+      title: "INoteBook",
+      description: "A user-friendly note-taking web app, ensuring 100% data security with robust authentication. Seamlessly created, edited, and deleted notes with HTML, CSS, React.js, Node.js, Express.js, and MongoDB.",
+      image: "/images/iNoteBook.png",
       tag: ["All", "Web"],
       gitUrl: "/",
       previewUrl: "/",
     },
-
+    
   ]);
 
   const [tag, setTag] = useState("All");
