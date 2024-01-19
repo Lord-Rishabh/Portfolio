@@ -50,31 +50,23 @@ const ProjectsSection = () => {
     setButton(true);
     const newProject = [{
       id: 4,
-      title: "Food Ordering Application",
-      description: "Project 4 description",
-      image: "/images/dev.avif",
+      title: "Simon Game",
+      description: "Experience the classic memory challenge brought to life with my creation using HTML, CSS, and JavaScript. Replicating the iconic Simon Game with a blend of fun and functionality.",
+      image: "/images/simonGame.png",
       tag: ["All", "Mobile"],
-      gitUrl: "/",
-      previewUrl: "/",
+      gitUrl: "https://github.com/Lord-Rishabh/Simon-Game",
+      previewUrl: "https://lord-rishabh.github.io/Simon-Game/",
     },
     {
       id: 5,
-      title: "React Firebase Template",
-      description: "Authentication and CRUD operations",
-      image: "/images/dev.avif",
+      title: "Drum-Kit",
+      description: "Dive into the rhythm with my interactive drum kit, skillfully crafted using HTML, CSS, and JavaScript. Each click resonates with a unique sound, offering an immersive and dynamic musical experience. ",
+      image: "/images/drumKit.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
-      previewUrl: "/",
+      gitUrl: "https://github.com/Lord-Rishabh/Drum-Kit",
+      previewUrl: "https://lord-rishabh.github.io/Drum-Kit/",
     },
-    {
-      id: 6,
-      title: "Full-stack Roadmap",
-      description: "Project 5 description",
-      image: "/images/dev.avif",
-      tag: ["All", "Web"],
-      gitUrl: "/",
-      previewUrl: "/",
-    },];
+    ];
     setProjectsData([...projectsData, ...newProject]);
   }
 
