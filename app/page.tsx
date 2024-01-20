@@ -5,6 +5,7 @@ import AboutMe from "./Components/About Me/page";
 import ProjectsSection from "./Components/Projects/page";
 import TechnologiesSection from "./Components/Technologies/page";
 import Footer from "./Components/Footer/page";
+
 export default function Page() {
     return (
         <div className="bg-[#232332] font-sans ">
