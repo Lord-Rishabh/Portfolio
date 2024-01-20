@@ -6,6 +6,7 @@ import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const WelcomeSection = () => {
 	const ref = useRef(null);
@@ -13,12 +14,6 @@ const WelcomeSection = () => {
 	const isInView = useInView(ref, { once: true });
 
 	let [count, setCount] = useState(0);
-	const [text] = useState([
-		"FrontEnd Developer",
-		"convert design into modern UI",
-		"build interactive UI using React",
-		"develop websites using Next.js"
-	]);
 
 	useEffect(() => {
 		let interval = setInterval(() => {
@@ -86,7 +81,8 @@ const WelcomeSection = () => {
 								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 							}}
 						>
-							<button type="button" className="text-white bg-[#50dfa8] font-semibold rounded-full text-lg max-md:text-sm px-5 py-2.5 text-center mr-4 ">Get my CV</button>
+							<Link href="/cv"><button type="button" className="text-white bg-[#50dfa8] font-semibold rounded-full text-lg max-md:text-sm px-5 py-2.5 text-center mr-4 ">Get my CV</button></Link>
+							
 							<a
 								href="https://github.com/your-github-username"
 								target="_blank"
