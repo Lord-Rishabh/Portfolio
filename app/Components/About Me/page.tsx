@@ -87,7 +87,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div className="pt-10">
+    <div className="pt-10" id="#about">
 
       <LazyMotion features={domAnimation}>
         <section className="text-white" id="about">

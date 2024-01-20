@@ -11,32 +11,32 @@ const WelcomeSection = () => {
 	const ref = useRef(null);
 	const introRef = useRef(null);
 	const isInView = useInView(ref, { once: true });
-  
+
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-	  "FrontEnd Developer",
-	  "convert design into modern UI",
-	  "build interactive UI using React",
-	  "develop websites using Next.js"
+		"FrontEnd Developer",
+		"convert design into modern UI",
+		"build interactive UI using React",
+		"develop websites using Next.js"
 	]);
-  
+
 	useEffect(() => {
-	  let interval = setInterval(() => {
-		setCount(count + 1);
-  
-		if (count === 3) {
-		  setCount(0);
-		}
-	  }, 2000);
-  
-	  return () => clearInterval(interval);
+		let interval = setInterval(() => {
+			setCount(count + 1);
+
+			if (count === 3) {
+				setCount(0);
+			}
+		}, 2000);
+
+		return () => clearInterval(interval);
 	}, [count]);
 
 	return (
 		<LazyMotion features={domAnimation}>
 			<section id="intro" className="section" ref={introRef}>
 				<div className="grid grid-cols-1 md:grid-cols-[1fr_0.5fr] lg:grid-cols-[1fr_0.7fr] gap-4 items-center lg:p-12">
-						
+
 					<div className="py-5 md:py-10 text-white">
 						<h1
 							ref={ref}
@@ -50,7 +50,7 @@ const WelcomeSection = () => {
 							<p>
 								Hi, I&apos;m <span className="text-[#3182ce]">Rishabh</span> a <span className="text-[#3182ce]">passionate</span> software developer.
 							</p>
-							
+
 						</h1>
 
 						<div className="mt-3 py-8 text-[#50dfa8] relative flex flex-col overflow-hidden font-bold">
@@ -87,8 +87,22 @@ const WelcomeSection = () => {
 							}}
 						>
 							<button type="button" className="text-white bg-[#50dfa8] font-semibold rounded-full text-lg max-md:text-sm px-5 py-2.5 text-center mr-4 ">Get my CV</button>
-							<FaGithub className="mr-2" size={32}/>
-							<FaLinkedin className="ml-2"size={32}/>
+							<a
+								href="https://github.com/your-github-username"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-gray-400 hover:text-white pr-4"
+							>
+								<FaGithub size={32} />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/your-linkedin-profile"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-gray-400 hover:text-white"
+							>
+								<FaLinkedin size={32} />
+							</a>
 						</div>
 					</div>
 					<Image className='w-auto xl:h-4/5 xl:absolute bottom-0 right-20 max-md:order-first' src='/images/photo.png' height={200} width={300} alt='cart Image' />

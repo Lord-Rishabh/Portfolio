@@ -24,8 +24,8 @@ export const TECHNOLOGIES = [
 			{ name: "Next", icon: <TbBrandNextjs size={37} /> },
 			{ name: "ExpressJs", icon: <SiExpress size={37} /> },
 			{ name: "NodeJs", icon: <FaNodeJs size={37} /> },
-			{ name: "Tailwind CSS", icon: <TbBrandTailwind size={37} /> },
 			{ name: "Bootstrap", icon: <BsBootstrap size={37} /> },
+			{ name: "Tailwind CSS", icon: <TbBrandTailwind size={37} /> },
 			
 		]
 	},
@@ -33,8 +33,8 @@ export const TECHNOLOGIES = [
 		category: "Databases",
 		items: [
 			{ name: "SQL", icon: <TbFileTypeSql  size={37} /> },
-			{ name: "MongoDB", icon: <SiMongodb  size={37} /> },
 			{ name: "MySQL", icon: <SiMysql  size={37} /> },
+			{ name: "MongoDB", icon: <SiMongodb  size={37} /> },
 		]
 	},
 	{
@@ -45,8 +45,8 @@ export const TECHNOLOGIES = [
 			{ name: "Postman", icon: <SiPostman size={37} /> },
 			{ name: "Vercel", icon: <IoLogoVercel size={37} /> },
 			{ name: "Anaconda", icon: <SiAnaconda size={37} /> },
-			{ name: "Jupyter Notebook", icon: <SiJupyter size={37} /> },
 			{ name: "VsCode", icon: <DiVisualstudio size={37} /> },
+			{ name: "Jupyter", icon: <SiJupyter size={37} /> },
 		]
 	}
 ];

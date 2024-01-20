@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { LazyMotion, domAnimation, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { TECHNOLOGIES } from "./technology";
 
 const TechnologiesSection = () => {
@@ -10,13 +10,13 @@ const TechnologiesSection = () => {
     const isStackInView = useInView(stackRef, { once: true });
 
     return (
-        <div className="text-white gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <div className="text-white gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16" id="#technology">
             <div className=" flex items-center ">
                 <h2 className="text-4xl font-bold text-white 
           mb-4 "><span className="text-4xl text-[#50dfa8]">Tech</span>nologies&nbsp;</h2>
                 <div className="flex-1 border-b border-solid border-gray-300"></div>
             </div>
-            <section id="tech" className="section">
+            <section id="tech" className="section pb-10">
                 <p
                     ref={textRef}
                     className="my-5 text-2xl"

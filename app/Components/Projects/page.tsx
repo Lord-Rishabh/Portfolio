@@ -84,7 +84,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <div className="gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
+    <div className="gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 " id="#projects">
       <section id="projects">
         <div className=" flex items-center ">
           <h2 className="text-4xl font-bold text-white 
