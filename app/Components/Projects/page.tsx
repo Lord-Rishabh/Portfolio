@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       image: "/images/portfolio.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/Lord-Rishabh/Portfolio",
-      previewUrl: "https://portfolio-4lnp.vercel.app/",
+      previewUrl: "https://65ae20872b475201a90cc3ab--splendid-centaur-441cda.netlify.app/",
     },
     {
       id: 3,

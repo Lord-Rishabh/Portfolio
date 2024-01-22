@@ -8,12 +8,13 @@ import Footer from "./Components/Footer/page";
 
 export default function Page() {
     return (
-        <div className="bg-[#232332] font-sans ">
+        <div className="bg-[#232332] font-sans">
             <Navbar />
-            <div className="container-md p-9 bg-[#232332]  max-md:overflow-y-auto overflow-hidden pb-13">
+            <div className="container-md p-9 bg-[#232332] max-md:overflow-y-auto overflow-hidden pb-13">
                 <WelcomeSection />
             </div>
-            <div className="pt-12">
+            <div className="pt-12 overflow-y-auto">
+                {/* Add overflow-y-auto to allow scrolling in this section */}
                 <AboutMe />
             </div>
             <ProjectsSection />

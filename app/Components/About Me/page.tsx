@@ -94,7 +94,7 @@ const AboutSection = () => {
           <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 
             <div className="rounded-lg ">
-              <Image src="/images/laptop.avif" width={600} height={600} alt="about me image" />
+              <Image src="/images/laptop.png" width={600} height={600} alt="about me image" />
             </div>
 
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
