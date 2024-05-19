@@ -1,7 +1,8 @@
 import { AiFillHtml5, AiFillGithub, AiFillGitlab } from "react-icons/ai";
 import { DiCss3, DiVisualstudio } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaReact, FaJava, FaPython, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaJava, FaNodeJs } from "react-icons/fa";
+import { SiNetlify } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 import { BsBootstrap } from "react-icons/bs";
 import { TbBrandNextjs, TbBrandTailwind, TbBrandCpp, TbFileTypeSql  } from "react-icons/tb";
@@ -12,7 +13,6 @@ export const TECHNOLOGIES = [
 		category: "Programming Languages",
 		items: [{ name: "C++", icon: <TbBrandCpp size={37} /> },
 		{ name: "Java", icon: <FaJava size={37} /> }, 
-		{ name: "Python", icon: <FaPython size={37} /> }, 
 		{ name: "JavaScript", icon: <IoLogoJavascript size={37} /> }, ]
 	},
 	{
@@ -44,9 +44,8 @@ export const TECHNOLOGIES = [
 			{ name: "Gitlab", icon: <AiFillGitlab size={37} /> },
 			{ name: "Postman", icon: <SiPostman size={37} /> },
 			{ name: "Vercel", icon: <IoLogoVercel size={37} /> },
-			{ name: "Anaconda", icon: <SiAnaconda size={37} /> },
 			{ name: "VsCode", icon: <DiVisualstudio size={37} /> },
-			{ name: "Jupyter", icon: <SiJupyter size={37} /> },
+			{ name: "Netlify", icon: <SiNetlify size={37} /> }
 		]
 	}
 ];

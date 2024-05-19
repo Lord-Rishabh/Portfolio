@@ -30,7 +30,7 @@ const WelcomeSection = () => {
 	return (
 		<LazyMotion features={domAnimation}>
 			<section id="intro" className="section" ref={introRef}>
-				<div className="grid grid-cols-1 md:grid-cols-[1fr_0.5fr] lg:grid-cols-[1fr_0.7fr] gap-4 items-center lg:p-12">
+				<div className="grid grid-cols-1 md:grid-cols-[1fr_0.5fr] lg:grid-cols-[1fr_0.7fr] gap-4 items-center lg:p-12 h-[92vh] ">
 
 					<div className="py-5 md:py-10 text-white">
 						<h1
@@ -39,7 +39,7 @@ const WelcomeSection = () => {
 							style={{
 								transform: isInView ? "none" : "translateX(-200px)",
 								opacity: isInView ? 1 : 0,
-								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
 							}}
 						>
 							<p>
@@ -68,7 +68,7 @@ const WelcomeSection = () => {
 							style={{
 								transform: isInView ? "none" : "translateX(-200px)",
 								opacity: isInView ? 1 : 0,
-								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+								transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
 							}}
 						>
 							Eager to embrace new technologies and challenges, I bring versatile skill set to create innovative and efficient solutions. Let's build the future of the web together.
